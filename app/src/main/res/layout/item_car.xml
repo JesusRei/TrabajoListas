@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewModelCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Hilux"
+        app:layout_constraintStart_toEndOf="@+id/textViewBrandCar"
+        app:layout_constraintTop_toTopOf="@+id/textViewBrandCar" />
+
+    <TextView
+        android:id="@+id/textViewBrandCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="Toyota"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCar"
+        app:layout_constraintTop_toTopOf="@+id/imageViewCar" />
+
+    <ImageView
+        android:id="@+id/imageViewCar"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/carro_list_cars" />
+
+    <TextView
+        android:id="@+id/textViewVinCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="9dp"
+        android:text="VIN 1312312321"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewModelCar" />
+
+    <TextView
+        android:id="@+id/textViewMileageCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="9dp"
+        android:text="4124124KM"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewVinCar" />
+
+    <TextView
+        android:id="@+id/textViewYearCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="2004"
+        app:layout_constraintStart_toEndOf="@+id/textViewMileageCar"
+        app:layout_constraintTop_toTopOf="@+id/textViewMileageCar" />
+
+    <TextView
+        android:id="@+id/textViewPlateCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="9dp"
+        android:text="WAD-2515"
+        app:layout_constraintStart_toEndOf="@+id/imageViewCar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMileageCar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
